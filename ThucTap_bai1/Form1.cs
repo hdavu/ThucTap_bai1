@@ -25,7 +25,7 @@ namespace ThucTap_bai1
         }
 
         public string _message_ten;
-
+        frmThongKeThuNhap tktn = new frmThongKeThuNhap();
 
 
         SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=[THUCTAP5]_QuanLyNhanSu;Integrated Security=True");
@@ -252,6 +252,11 @@ namespace ThucTap_bai1
                 LoadData();
 
             }
+        }
+
+        private void thốngKêTheoMứcThuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tktn.ShowDialog();
         }
     }
 }
