@@ -16,7 +16,6 @@ namespace ThucTap_bai1
         public frmThongKeThuNhap()
         {
             InitializeComponent();
-
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=[THUCTAP5]_QuanLyNhanSu;Integrated Security=True");
