@@ -16,7 +16,7 @@ namespace ThucTap_bai1
         public frmThongKeChuyenMon()
         {
             InitializeComponent();
-            con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=[THUCTAP5]_QuanLyNhanSu;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
             dataGridView1.DataSource = null;
         }
 
@@ -75,14 +75,17 @@ namespace ThucTap_bai1
 
         private void frmThongKeChuyenMon_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '___THUCTAP5__QuanLyNhanSuDataSet.chucvu' table. You can move, or remove it, as needed.
-            this.chucvuTableAdapter.Fill(this.___THUCTAP5__QuanLyNhanSuDataSet.chucvu);
-            // TODO: This line of code loads data into the '___THUCTAP5__QuanLyNhanSuDataSet.trinhdo' table. You can move, or remove it, as needed.
-            this.trinhdoTableAdapter.Fill(this.___THUCTAP5__QuanLyNhanSuDataSet.trinhdo);
-            // TODO: This line of code loads data into the '___THUCTAP5__QuanLyNhanSuDataSet.chuyenmon' table. You can move, or remove it, as needed.
-            this.chuyenmonTableAdapter.Fill(this.___THUCTAP5__QuanLyNhanSuDataSet.chuyenmon);
-            // TODO: This line of code loads data into the '___THUCTAP5__QuanLyNhanSuDataSet.phongban' table. You can move, or remove it, as needed.
-            this.phongbanTableAdapter.Fill(this.___THUCTAP5__QuanLyNhanSuDataSet.phongban);
+            // TODO: This line of code loads data into the 'quanLyNhanSuDataSet.phongban' table. You can move, or remove it, as needed.
+            this.phongbanTableAdapter1.Fill(this.quanLyNhanSuDataSet.phongban);
+            // TODO: This line of code loads data into the 'quanLyNhanSuDataSet.chucvu' table. You can move, or remove it, as needed.
+            this.chucvuTableAdapter1.Fill(this.quanLyNhanSuDataSet.chucvu);
+            // TODO: This line of code loads data into the 'quanLyNhanSuDataSet.trinhdo' table. You can move, or remove it, as needed.
+            this.trinhdoTableAdapter1.Fill(this.quanLyNhanSuDataSet.trinhdo);
+            // TODO: This line of code loads data into the 'quanLyNhanSuDataSet.chuyenmon' table. You can move, or remove it, as needed.
+            this.chuyenmonTableAdapter1.Fill(this.quanLyNhanSuDataSet.chuyenmon);
+            // TODO: This line of code loads data into the 'QuanLyNhanSu.chucvu' table. You can move, or remove it, as needed.
+           // this.phongbanTableAdapter1.Fill(this.quanLyNhanSuDataSet.phongban);
+
 
         }
 

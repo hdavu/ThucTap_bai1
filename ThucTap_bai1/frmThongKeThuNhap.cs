@@ -18,7 +18,7 @@ namespace ThucTap_bai1
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=[THUCTAP5]_QuanLyNhanSu;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

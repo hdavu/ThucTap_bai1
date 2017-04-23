@@ -36,22 +36,36 @@
             this.phongbanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.___THUCTAP5__QuanLyNhanSuDataSet = new ThucTap_bai1.@__THUCTAP5__QuanLyNhanSuDataSet();
             this.cboChuyenmon = new System.Windows.Forms.ComboBox();
+            this.chuyenmonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyNhanSuDataSet = new ThucTap_bai1.QuanLyNhanSuDataSet();
             this.chuyenmonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cboTrinhdo = new System.Windows.Forms.ComboBox();
+            this.trinhdoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.trinhdoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cboChucvu = new System.Windows.Forms.ComboBox();
+            this.chucvuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.chucvuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnThoat = new System.Windows.Forms.Button();
             this.phongbanTableAdapter = new ThucTap_bai1.@__THUCTAP5__QuanLyNhanSuDataSetTableAdapters.phongbanTableAdapter();
             this.chuyenmonTableAdapter = new ThucTap_bai1.@__THUCTAP5__QuanLyNhanSuDataSetTableAdapters.chuyenmonTableAdapter();
             this.trinhdoTableAdapter = new ThucTap_bai1.@__THUCTAP5__QuanLyNhanSuDataSetTableAdapters.trinhdoTableAdapter();
             this.chucvuTableAdapter = new ThucTap_bai1.@__THUCTAP5__QuanLyNhanSuDataSetTableAdapters.chucvuTableAdapter();
+            this.chuyenmonTableAdapter1 = new ThucTap_bai1.QuanLyNhanSuDataSetTableAdapters.chuyenmonTableAdapter();
+            this.trinhdoTableAdapter1 = new ThucTap_bai1.QuanLyNhanSuDataSetTableAdapters.trinhdoTableAdapter();
+            this.chucvuTableAdapter1 = new ThucTap_bai1.QuanLyNhanSuDataSetTableAdapters.chucvuTableAdapter();
+            this.phongbanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.phongbanTableAdapter1 = new ThucTap_bai1.QuanLyNhanSuDataSetTableAdapters.phongbanTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongbanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.___THUCTAP5__QuanLyNhanSuDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhanSuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chuyenmonBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trinhdoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trinhdoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongbanBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -90,7 +104,7 @@
             // 
             // cboPhongban
             // 
-            this.cboPhongban.DataSource = this.phongbanBindingSource;
+            this.cboPhongban.DataSource = this.phongbanBindingSource1;
             this.cboPhongban.DisplayMember = "ten";
             this.cboPhongban.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPhongban.Enabled = false;
@@ -114,7 +128,7 @@
             // 
             // cboChuyenmon
             // 
-            this.cboChuyenmon.DataSource = this.chuyenmonBindingSource;
+            this.cboChuyenmon.DataSource = this.chuyenmonBindingSource1;
             this.cboChuyenmon.DisplayMember = "tenchuyenmon";
             this.cboChuyenmon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboChuyenmon.Enabled = false;
@@ -126,6 +140,16 @@
             this.cboChuyenmon.ValueMember = "ma";
             this.cboChuyenmon.SelectedIndexChanged += new System.EventHandler(this.cboChuyenmon_SelectedIndexChanged);
             // 
+            // chuyenmonBindingSource1
+            // 
+            this.chuyenmonBindingSource1.DataMember = "chuyenmon";
+            this.chuyenmonBindingSource1.DataSource = this.quanLyNhanSuDataSet;
+            // 
+            // quanLyNhanSuDataSet
+            // 
+            this.quanLyNhanSuDataSet.DataSetName = "QuanLyNhanSuDataSet";
+            this.quanLyNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // chuyenmonBindingSource
             // 
             this.chuyenmonBindingSource.DataMember = "chuyenmon";
@@ -133,7 +157,7 @@
             // 
             // cboTrinhdo
             // 
-            this.cboTrinhdo.DataSource = this.trinhdoBindingSource;
+            this.cboTrinhdo.DataSource = this.trinhdoBindingSource1;
             this.cboTrinhdo.DisplayMember = "tentrinhdo";
             this.cboTrinhdo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTrinhdo.Enabled = false;
@@ -145,6 +169,11 @@
             this.cboTrinhdo.ValueMember = "ma";
             this.cboTrinhdo.SelectedIndexChanged += new System.EventHandler(this.cboTrinhdo_SelectedIndexChanged);
             // 
+            // trinhdoBindingSource1
+            // 
+            this.trinhdoBindingSource1.DataMember = "trinhdo";
+            this.trinhdoBindingSource1.DataSource = this.quanLyNhanSuDataSet;
+            // 
             // trinhdoBindingSource
             // 
             this.trinhdoBindingSource.DataMember = "trinhdo";
@@ -152,7 +181,7 @@
             // 
             // cboChucvu
             // 
-            this.cboChucvu.DataSource = this.chucvuBindingSource;
+            this.cboChucvu.DataSource = this.chucvuBindingSource1;
             this.cboChucvu.DisplayMember = "ten";
             this.cboChucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboChucvu.Enabled = false;
@@ -163,6 +192,11 @@
             this.cboChucvu.TabIndex = 2;
             this.cboChucvu.ValueMember = "ma";
             this.cboChucvu.SelectedIndexChanged += new System.EventHandler(this.cboChucvu_SelectedIndexChanged);
+            // 
+            // chucvuBindingSource1
+            // 
+            this.chucvuBindingSource1.DataMember = "chucvu";
+            this.chucvuBindingSource1.DataSource = this.quanLyNhanSuDataSet;
             // 
             // chucvuBindingSource
             // 
@@ -195,6 +229,27 @@
             // 
             this.chucvuTableAdapter.ClearBeforeFill = true;
             // 
+            // chuyenmonTableAdapter1
+            // 
+            this.chuyenmonTableAdapter1.ClearBeforeFill = true;
+            // 
+            // trinhdoTableAdapter1
+            // 
+            this.trinhdoTableAdapter1.ClearBeforeFill = true;
+            // 
+            // chucvuTableAdapter1
+            // 
+            this.chucvuTableAdapter1.ClearBeforeFill = true;
+            // 
+            // phongbanBindingSource1
+            // 
+            this.phongbanBindingSource1.DataMember = "phongban";
+            this.phongbanBindingSource1.DataSource = this.quanLyNhanSuDataSet;
+            // 
+            // phongbanTableAdapter1
+            // 
+            this.phongbanTableAdapter1.ClearBeforeFill = true;
+            // 
             // frmThongKeChuyenMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,9 +271,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongbanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.___THUCTAP5__QuanLyNhanSuDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhanSuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chuyenmonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trinhdoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trinhdoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chucvuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongbanBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +303,14 @@
         private __THUCTAP5__QuanLyNhanSuDataSetTableAdapters.trinhdoTableAdapter trinhdoTableAdapter;
         private System.Windows.Forms.BindingSource chucvuBindingSource;
         private __THUCTAP5__QuanLyNhanSuDataSetTableAdapters.chucvuTableAdapter chucvuTableAdapter;
+        private QuanLyNhanSuDataSet quanLyNhanSuDataSet;
+        private System.Windows.Forms.BindingSource chuyenmonBindingSource1;
+        private QuanLyNhanSuDataSetTableAdapters.chuyenmonTableAdapter chuyenmonTableAdapter1;
+        private System.Windows.Forms.BindingSource trinhdoBindingSource1;
+        private QuanLyNhanSuDataSetTableAdapters.trinhdoTableAdapter trinhdoTableAdapter1;
+        private System.Windows.Forms.BindingSource chucvuBindingSource1;
+        private QuanLyNhanSuDataSetTableAdapters.chucvuTableAdapter chucvuTableAdapter1;
+        private System.Windows.Forms.BindingSource phongbanBindingSource1;
+        private QuanLyNhanSuDataSetTableAdapters.phongbanTableAdapter phongbanTableAdapter1;
     }
 }

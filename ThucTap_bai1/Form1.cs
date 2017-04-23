@@ -29,7 +29,7 @@ namespace ThucTap_bai1
         frmThongKeChuyenMon tkcm = new frmThongKeChuyenMon();
 
 
-        SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=[THUCTAP5]_QuanLyNhanSu;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
         DataSet ds = new DataSet();
 
 

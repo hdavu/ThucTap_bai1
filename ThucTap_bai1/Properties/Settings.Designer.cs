@@ -33,5 +33,16 @@ namespace ThucTap_bai1.Properties {
                 return ((string)(this["_THUCTAP5__QuanLyNhanSuConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HDAVU\\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=Tru" +
+            "e")]
+        public string QuanLyNhanSuConnectionString {
+            get {
+                return ((string)(this["QuanLyNhanSuConnectionString"]));
+            }
+        }
     }
 }
